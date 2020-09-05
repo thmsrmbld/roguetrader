@@ -1,0 +1,292 @@
+[
+  {
+    "model": "stocks.stock",
+    "pk": 1,
+    "fields": {
+      "created": null,
+      "updated": "2019-12-01T22:33:51.266Z",
+      "symbol": "GBL",
+      "name": "Glooble",
+      "sector": null,
+      "base_price": "801.22",
+      "ceiling_price": "8500.00",
+      "lowest_price": "597.41",
+      "highest_price": "981.14",
+      "current_price": "597.41",
+      "booming": 0,
+      "busting": 0,
+      "suspended": 0,
+      "active": true
+    }
+  },
+  {
+    "model": "stocks.stock",
+    "pk": 2,
+    "fields": {
+      "created": null,
+      "updated": "2019-12-01T22:33:51.280Z",
+      "symbol": "NRD",
+      "name": "Nordia",
+      "sector": null,
+      "base_price": "105.00",
+      "ceiling_price": "2673.00",
+      "lowest_price": "80.10",
+      "highest_price": "109.20",
+      "current_price": "80.10",
+      "booming": 0,
+      "busting": 0,
+      "suspended": 0,
+      "active": true
+    }
+  },
+  {
+    "model": "stocks.stock",
+    "pk": 3,
+    "fields": {
+      "created": null,
+      "updated": "2019-12-01T22:33:51.273Z",
+      "symbol": "LYD",
+      "name": "Liberty US Defence",
+      "sector": null,
+      "base_price": "1076.22",
+      "ceiling_price": "1000.00",
+      "lowest_price": "886.04",
+      "highest_price": "1125.67",
+      "current_price": "1087.67",
+      "booming": 0,
+      "busting": 0,
+      "suspended": 0,
+      "active": true
+    }
+  },
+  {
+    "model": "stocks.stock",
+    "pk": 4,
+    "fields": {
+      "created": null,
+      "updated": "2019-12-01T22:33:51.271Z",
+      "symbol": "HFC",
+      "name": "Health4Cash",
+      "sector": null,
+      "base_price": "987.35",
+      "ceiling_price": "3900.00",
+      "lowest_price": "812.59",
+      "highest_price": "1071.17",
+      "current_price": "812.59",
+      "booming": 0,
+      "busting": 0,
+      "suspended": 0,
+      "active": true
+    }
+  },
+  {
+    "model": "stocks.stock",
+    "pk": 5,
+    "fields": {
+      "created": null,
+      "updated": "2019-12-01T22:33:51.262Z",
+      "symbol": "FLY",
+      "name": "Futily",
+      "sector": null,
+      "base_price": "294.31",
+      "ceiling_price": "1000.00",
+      "lowest_price": "257.28",
+      "highest_price": "402.22",
+      "current_price": "344.37",
+      "booming": 0,
+      "busting": 0,
+      "suspended": 0,
+      "active": true
+    }
+  },
+  {
+    "model": "stocks.stock",
+    "pk": 6,
+    "fields": {
+      "created": null,
+      "updated": "2019-12-01T22:33:51.264Z",
+      "symbol": "GAA",
+      "name": "Galileo Air",
+      "sector": null,
+      "base_price": "300.01",
+      "ceiling_price": "100.00",
+      "lowest_price": "242.45",
+      "highest_price": "338.14",
+      "current_price": "249.27",
+      "booming": 0,
+      "busting": 0,
+      "suspended": 0,
+      "active": true
+    }
+  },
+  {
+    "model": "stocks.stock",
+    "pk": 7,
+    "fields": {
+      "created": null,
+      "updated": "2019-12-01T22:33:51.287Z",
+      "symbol": "RBX",
+      "name": "Robotnix",
+      "sector": null,
+      "base_price": "259.65",
+      "ceiling_price": "1000.00",
+      "lowest_price": "229.22",
+      "highest_price": "262.48",
+      "current_price": "249.35000",
+      "booming": 0,
+      "busting": 0,
+      "suspended": 0,
+      "active": true
+    }
+  },
+  {
+    "model": "stocks.stock",
+    "pk": 8,
+    "fields": {
+      "created": null,
+      "updated": "2019-12-01T22:33:51.287Z",
+      "symbol": "BZG",
+      "name": "Bowser Gaming",
+      "sector": null,
+      "base_price": "229.65",
+      "ceiling_price": "1200.00",
+      "lowest_price": "229.22",
+      "highest_price": "229.22",
+      "current_price": "229.22",
+      "booming": 0,
+      "busting": 0,
+      "suspended": 0,
+      "active": false
+    }
+  },
+  {
+    "model": "stocks.stock",
+    "pk": 9,
+    "fields": {
+      "created": null,
+      "updated": "2019-12-01T22:33:51.287Z",
+      "symbol": "WVE",
+      "name": "Wave Inc.",
+      "sector": null,
+      "base_price": "2259.65",
+      "ceiling_price": "10000.00",
+      "lowest_price": "2239.22",
+      "highest_price": "2239.22",
+      "current_price": "2239.22",
+      "booming": 0,
+      "busting": 0,
+      "suspended": 0,
+      "active": false
+    }
+  },
+  {
+    "model": "stocks.stock",
+    "pk": 10,
+    "fields": {
+      "created": null,
+      "updated": "2019-12-01T22:33:51.287Z",
+      "symbol": "PNK",
+      "name": "PUNK Inc.",
+      "sector": null,
+      "base_price": "2259.65",
+      "ceiling_price": "15000.00",
+      "lowest_price": "2239.22",
+      "highest_price": "2239.22",
+      "current_price": "10872.22",
+      "booming": 0,
+      "busting": 0,
+      "suspended": 0,
+      "active": false
+    }
+  },
+  {
+    "model": "stocks.marketsector",
+    "pk": 1,
+    "fields": {
+      "created": null,
+      "updated": null,
+      "name": "Energy"
+    }
+  },
+  {
+    "model": "stocks.marketsector",
+    "pk": 2,
+    "fields": {
+      "created": null,
+      "updated": null,
+      "name": "Materials"
+    }
+  },
+  {
+    "model": "stocks.marketsector",
+    "pk": 3,
+    "fields": {
+      "created": null,
+      "updated": null,
+      "name": "Industrial"
+    }
+  },
+  {
+    "model": "stocks.marketsector",
+    "pk": 4,
+    "fields": {
+      "created": null,
+      "updated": null,
+      "name": "Consumer Discretionary"
+    }
+  },
+  {
+    "model": "stocks.marketsector",
+    "pk": 5,
+    "fields": {
+      "created": null,
+      "updated": null,
+      "name": "Consumer Staples"
+    }
+  },
+  {
+    "model": "stocks.marketsector",
+    "pk": 6,
+    "fields": {
+      "created": null,
+      "updated": null,
+      "name": "Healthcare"
+    }
+  },
+  {
+    "model": "stocks.marketsector",
+    "pk": 7,
+    "fields": {
+      "created": null,
+      "updated": null,
+      "name": "Financial"
+    }
+  },
+  {
+    "model": "stocks.marketsector",
+    "pk": 8,
+    "fields": {
+      "created": null,
+      "updated": null,
+      "name": "Telecommunications"
+    }
+  },
+  {
+    "model": "stocks.marketsector",
+    "pk": 9,
+    "fields": {
+      "created": null,
+      "updated": null,
+      "name": "Utilities"
+    }
+  },
+   {
+    "model": "stocks.marketsector",
+    "pk": 10,
+    "fields": {
+      "created": null,
+      "updated": null,
+      "name": "Real Estate"
+    }
+  }
+]
