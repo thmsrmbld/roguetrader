@@ -27,8 +27,6 @@ services:
       - db_network
       - nginx_network
       - redis_network
-    links:
-      - redis
     depends_on:
       - db
 

@@ -17,10 +17,10 @@ build:
 	docker-compose build
 	docker-compose up
 
-start:
+up:
 	docker-compose up
 
-stop:
+down:
 	docker-compose down
 
 fullrebuild:
@@ -54,7 +54,7 @@ rebuilddb:
 	$(BACKEND_CMD) "cd $(PROJECT); ./manage.py migrate;"
 
 psqlshell:
-	  $(DATABASE_CMD) "PGUSER=$(POSTGRES_USER) PGPASSWORD=$(POSTGRES_PASSWORD) psql $(POSTGRES_DB)"
+	$(DATABASE_CMD) "PGUSER=$(POSTGRES_USER) PGPASSWORD=$(POSTGRES_PASSWORD) psql $(POSTGRES_DB)"
 
 # GENERAL - General purpose tools
 createadmin:
@@ -107,7 +107,7 @@ runtests:
 django-version:
 	$(BACKEND_CMD) "cd $(PROJECT); python3 -m django --version;"
 
-predeploy: springclean dockerclean runtests
+predeploy: springclean runtests
 
 # Maintenance & cleanup tools
 springclean:

@@ -12,6 +12,7 @@ class StockSerializer(s.ModelSerializer):
     class Meta:
         model = Stock
         fields = [
+            'id',
             'active',
             'pk',
             'symbol',
