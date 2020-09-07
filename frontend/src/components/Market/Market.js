@@ -74,7 +74,7 @@ class Market extends Component {
                   </thead>
 
                   <tbody>
-                    {stocks.map((stock, i) => (
+                    {stocks.map((stock) => (
                         <tr key={stock.id}>
                           <td>{ stock.name }</td>
                           <td>{ stock.symbol }</td>

@@ -56,10 +56,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://localhost:8000",
-    "http://127.0.0.1:3000",
-    "http://127.0.0.1:8000"
+    'http://localhost:3000',
+    'http://localhost:8000',
+    'http://127.0.0.1:3000',
+    'http://127.0.0.1:8000'
 ]
 
 ROOT_URLCONF = 'roguetrader.urls'
@@ -119,9 +119,11 @@ CELERY_RESULT_BACKEND = os.environ.get(
   'redis://redis:6379/0'
 )
 
+CELERY_IMPORTS = ('roguetrader.tasks',)
+
 CELERY_BEAT_SCHEDULE = {
- 'send-notification-every-ten-seconds': {
-        'task': 'roguetrader.tasks.send_notification',
+    'perform-price-update': {
+        'task': 'roguetrader.tasks.price_update',
         'schedule': timedelta(seconds=5),
     },
 }

@@ -1,7 +1,6 @@
 version: '3'
 
 services:
-
   # Database container for PostgreSQL
   db:
     container_name: db-postgres
@@ -27,6 +26,8 @@ services:
       - db_network
       - nginx_network
       - redis_network
+    links:
+      - redis
     depends_on:
       - db
 
@@ -63,12 +64,14 @@ services:
   worker:
     container_name: worker
     working_dir: /opt/services/backend/src/roguetrader
-    image: roguetrader_backend:latest
+    build: .
+#    image: roguetrader_backend:latest
     depends_on:
       - redis
     command: sh -c "celery worker -A roguetrader --loglevel=INFO && celery -A roguetrader beat"
     networks:
       - redis_network
+      - db_network
 
   #  Message queue for handling Celery tasks
   redis:
