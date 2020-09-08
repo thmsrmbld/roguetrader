@@ -6,6 +6,7 @@ INSTALL = pip install
 
 # Sets commands for individual containers
 BACKEND_CMD = docker-compose run --rm backend /bin/bash -c
+WORKER_CMD = docker-compose run --rm worker /bin/bash -c
 DATABASE_CMD = docker-compose exec db bash -c
 
 # Includes and exports environment variables for Database
@@ -45,7 +46,7 @@ loaddata:
 	$(BACKEND_CMD) "cd $(PROJECT); ./manage.py loaddata $(APP);"
 
 startbeat:
-	$(BACKEND_CMD) "cd $(PROJECT); celery -A roguetrader beat;"
+	$(WORKER_CMD) "celery worker -B -A roguetrader;"
 
 # WARNING - This drops and rebuilds your local db from scratch
 rebuilddb:

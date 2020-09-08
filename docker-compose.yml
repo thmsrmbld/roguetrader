@@ -68,7 +68,11 @@ services:
 #    image: roguetrader_backend:latest
     depends_on:
       - redis
-    command: sh -c "celery worker -A roguetrader --loglevel=INFO && celery -A roguetrader beat"
+    command: sh -c "celery worker -A roguetrader --loglevel=INFO && celery -A roguetrader --beat"
+    volumes:
+      - .:/opt/services/backend/src
+      - static:/opt/services/backend/static
+      - media:/opt/services/backend/media
     networks:
       - redis_network
       - db_network
